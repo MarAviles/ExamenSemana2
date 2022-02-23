@@ -1,5 +1,5 @@
-<div class="contenerdor">
-    <div id="formulario">
+<div class="contenedor">
+    <div  class="items" id="formulario">
         <h1>Registro de trabajadores</h1>
         <form form [formGroup] = "formulario" (ngSubmit)="guardar()">
             <label for="nombre">Nombre</label><br>
@@ -18,7 +18,7 @@
         </form>
     </div>
 
-    <div>
+    <div class="items">
         <button [routerLink]="['/listado']"> Ver trabajadores</button>
     </div>
 </div>

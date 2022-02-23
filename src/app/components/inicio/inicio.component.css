@@ -1,0 +1,70 @@
+
+.contenedor {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+}
+
+h1 {
+    font-size: 20px;
+    padding: 10px;
+}
+
+#formulario {
+    background-color: rgb(146, 146, 255);
+    font-family: 'Montserrat', sans-serif;
+    width: 400px;
+    height: 400px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+label {
+    font-size: 15px;
+}
+
+input[type=text],
+input[type=number] {
+    border: 0;
+    border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 10px;
+    height: 25px; 
+}
+
+input[type=submit]{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    margin: none;
+    border: none;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    padding: none;
+    margin: none;
+    border: none;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgb(0, 131, 207);
+    border-radius: 5px;
+    color: #fff;
+}
+
+button:hover, button:focus {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    outline: 0;
+  }
