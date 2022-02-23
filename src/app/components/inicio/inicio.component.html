@@ -1,0 +1,24 @@
+<div class="contenerdor">
+    <div id="formulario">
+        <h1>Registro de trabajadores</h1>
+        <form form [formGroup] = "formulario" (ngSubmit)="guardar()">
+            <label for="nombre">Nombre</label><br>
+            <input type="text" id="name" formControlName="nombre"><br>
+    
+            <label for="apellido">Apellido</label><br>
+            <input type="text" id="apellido" formControlName="apellido"><br>
+    
+            <label for="puesto">Puesto</label><br>
+            <input type="text" id="puesto" formControlName="puesto"><br>
+    
+            <label for="salario">Salario</label><br>
+            <input type="number" id="salario" formControlName="salario"><br>
+    
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <div>
+        <button [routerLink]="['/listado']"> Ver trabajadores</button>
+    </div>
+</div>

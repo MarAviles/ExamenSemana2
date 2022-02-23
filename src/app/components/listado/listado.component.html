@@ -1,0 +1,27 @@
+<div class="contenedores" id="tabla">
+    <div>
+        <button [routerLink]="['/inicio']">Volver</button>
+        <h2>Listado de Trabajadores</h2>
+    </div>
+    
+    <div id="tabla">
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Puesto</th>
+                <th>Sueldo</th>
+            </tr>
+            <tbody *ngFor="let trabajador of trabajadores">
+                    <tr>
+                        <td>{{trabajador.nombre}} {{trabajador.apellido}}</td>
+                        <td>{{trabajador.puesto}}</td>
+                        <td>{{trabajador.salario}}</td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <button (click)="borrar()">Borrar</button>
+    </div>
+</div>
