@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Cancion } from '../interface/cancion.modelo';
+import { CancionService } from '../services/cancion.service';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +8,12 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  canciones: Cancion[] = [];
 
-  constructor() {}
+  constructor(private CancionService: CancionService) {}
+
+  ngOnInit(): void {   
+    this.canciones = this.CancionService.getAll();
+  }
 
 }
